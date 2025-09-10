@@ -109,7 +109,7 @@ body{
     font-weight: 700;
     color: #FFFFFF;
     font-size: 13px;
-    font-family: smedium;
+    font-family: sregular;
     background-color: transparent;
     padding: 4px 16px;
     border: none;
@@ -160,14 +160,14 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
 }
 .song {
     padding: 8px 8px 8px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 3px;
 }
 .song div:nth-child(1){
     /* height: 152px; */
@@ -201,7 +201,7 @@ body{
 }
 /* footer */
 footer{
-    padding: 8px 16px 40px;
+    padding: 10px 16px 63px;
 }
 .footer-one{
     margin-top: 32px;
@@ -218,14 +218,15 @@ footer{
     font-weight: 400;
     font-family: smedium;
     text-decoration: none;
-    padding: 0 0 10px;
+    padding: 0 0 11.5px;
 }
 .footer-one p {
     color: #FFFFFF;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-size: 16px;
     font-weight: 700;
-    font-family: sregular;
+    font-family: smedium;
+    letter-spacing: 0.1px;
 }
 .footer-one-sub-one div:nth-child(2){
     display: flex;
@@ -244,7 +245,9 @@ footer{
 }
 .footer-svg {
     display: flex;
-    margin: 0 0 40px;
+    margin: 0 0 39px;
+    position: relative;
+    bottom: 4px;
 }
 .footer-svg div:nth-child(1) {
     width: 40px;
@@ -293,21 +296,62 @@ footer{
 @media screen and (min-width:768px){
     .footer-one-sub-one {
         display: flex;
-        justify-content: space-between;
     }
     .footer-one-sub-two {
+        display: flex;
+    }
+    .footer-one-sub-one div:nth-child(1){
+        margin: 0 24px 32px 0;
+        width: 297px;
+    }
+    .footer-one-sub-one div:nth-child(2){
+        margin: 0 24px 32px -3px;
+        width: 297px;
+    }
+    .footer-one-sub-two div:nth-child(1){
+        margin: 0 24px 32px 0px;
+        width: 297px;
+    }
+    .footer-one-sub-two div:nth-child(2){
+        width: 297px;
+        margin: 0 24px 32px -3px;
+    }
+    .footer-svg{
+        bottom: 3px;
+    }
+}
+@media screen and (min-width:1024px){
+    .footer-one{
         display: flex;
         justify-content: space-between;
     }
     .footer-one-sub-one div:nth-child(1){
-        margin: 0 24px 32px 0;
+        width: 161px;
+        margin: 3px 24px 32px 0px;
     }
     .footer-one-sub-one div:nth-child(2){
-        margin: 0 24px 32px 0px;
+        width: 161px;
+        margin: 3px 24px 32px 1px;
     }
-    .footer-one-sub-two div{
-        margin: 0 24px 32px 0px;
+    .footer-one-sub-two div:nth-child(1){
+        width: 161px;
+        margin: 5px 24px 32px -42px;
+        position: relative;
+        right: 8px;
     }
+    .footer-one-sub-two div:nth-child(2){
+        width: 161px;
+        margin: 3px 24px 32px -8px;
+    }
+    footer{
+    padding: 10px 32px 63px;
+}
+    .footer-svg{
+        top: 8px;
+        left: 15px;
+    }
+
+    
 }
 /* footer-two */
 .footer-two{
@@ -323,10 +367,12 @@ footer{
 .footer-two-main{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    column-gap: 16px;
+    row-gap: 12px;
 }
 .footer-two div:nth-child(2){
-    margin-top: 8px;
+    margin-top: 11px;
+    margin-bottom: 4px;
     padding: 0 16px 0 0;
 }
 .footer-two div:nth-child(2) p {
@@ -336,42 +382,49 @@ footer{
 }
 .footer-two-last {
     position: relative; 
-    padding: 16px 0px 0px;
+    padding: 14px 0px 0px;
 }  
 .footer-two-last svg{
     width: 16px;
     height: 16px;
     position: absolute;
-    left: 12px;
-    top: 26px;
+    left: 13px;
+    top: 22px;
 }
 .footer-two-last button{
     background-color: #121212;
     border: 1px solid #7c7c7c;
     border-radius: 9999px;
     color: #FFFFFF;
-    padding: 8px 16px 8px 36px;
+    padding: 7px 17px 7px 36px;
     font-size: 13px;
-    font-family: sregular;
+    font-family: smedium;
     font-weight: 700;
 }
 hr{
     border-color: rgba(255,255 ,255 ,0.1);
     margin: 0 0 20px;
+    position: relative;
+    bottom: 4px;
 }
 .footer-last{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     height: 70px;
     background-color: #000;
+    position: sticky;
+    bottom: 0;
 }
 .footer-last div:nth-child(1){
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     justify-content: center;
     align-items: center;
+    width: 93px;
+    position: relative;
+    left: 1px;
+    bottom: 0px;
 }
 .footer-last div:nth-child(2){
     display: flex;
@@ -379,6 +432,10 @@ hr{
     gap: 5px;
     justify-content: center;
     align-items: center;
+    width: 93px;
+    position: relative;
+    left: 1px;
+    bottom: 1px;
 }
 .footer-last div:nth-child(3){
     display: flex;
@@ -386,6 +443,10 @@ hr{
     gap: 5px;
     justify-content: center;
     align-items: center;
+    width: 93px;
+    position: relative;
+    left: 2px;
+    bottom: 1px;
 }
 .footer-last div:nth-child(4){
     display: flex;
@@ -393,6 +454,10 @@ hr{
     gap: 5px;
     justify-content: center;
     align-items: center;
+    width: 93px;
+    position: relative;
+    left: 3px;
+    bottom: 0px;
 }
 .footer-last p {
     color: #B3B3B3;
@@ -400,10 +465,71 @@ hr{
     font-weight: 400;
     font-family: smedium;
 }
-
-
+.footer-last div:nth-child(1) p{
+    color: #FFFFFF;
+    font-family:sregular;
+    padding-right: 1px;
+}
 /* media quaries */
-@media screen and (min-width:768px){
-
+@media screen and (min-width:425px){
+    .footer-last div:nth-child(1){
+        width: 106px;
+        padding-right: 1px;
+       
+    }
+    .footer-last div:nth-child(2){
+        width: 106px;
+        padding-right: 1px;
+        
+    }
+    .footer-last div:nth-child(3){
+        width: 106px;
+        padding-right: 2px;
+    }
+    .footer-last div:nth-child(4){
+        width: 106px;
+        padding-right: 3px;
+    }
     
 }
+@media screen and (min-width:768px){
+    hr{
+        bottom: 2px;
+    }
+    .footer-last div:nth-child(1){
+        width: 192px;
+    }
+    .footer-last div:nth-child(2){
+        width: 192px;
+    }
+    .footer-last div:nth-child(3){
+        width: 192px;
+    }
+    .footer-last div:nth-child(4){
+        width: 192px;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    .footer-two{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .footer-two-last{
+        display: none;
+    }
+    .footer-last div:nth-child(1){
+        width: 256px;
+    }
+    .footer-last div:nth-child(2){
+        width: 256px;
+    }
+    .footer-last div:nth-child(3){
+        width: 256px;
+    }
+    .footer-last div:nth-child(4){
+        width: 256px;
+    }
+}
+
