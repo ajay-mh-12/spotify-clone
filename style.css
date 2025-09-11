@@ -46,6 +46,12 @@ body{
     min-height: 32px;
     font-family: smedium;
 }
+@media screen and (min-width:1024px){
+    .section-header {
+        padding: 4px 13px 0 16px;
+    }
+    
+}
 /* home-banner */
 .home-banner{
     width: 100%;
@@ -135,6 +141,13 @@ body{
     .home-banner-main div:nth-child(2) h2 {
         width: 90%;
     }    
+}
+@media screen and (min-width:1024px){
+    .home-banner-main {
+        margin: 12px 13px 0px 16px;
+
+    }
+    
 }
 .body-banner{
     padding: 0 16px;
