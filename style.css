@@ -53,6 +53,23 @@ body{
 .lap-header {
     display: none;
 }
+
+.greenPlybtn{
+    background-color: #1ed670;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 100px;
+    right: 8px;
+    border: none;
+    /* display: none; */
+}
+.songs div:nth-child(1){
+    position: relative;
+    
+}
+
 @media screen and (min-width:1024px){
     /* .section-header {
         padding: 4px 13px 0 16px;
@@ -64,7 +81,7 @@ body{
         display: block;
         display: flex;
         justify-content: space-between;
-        padding: 7px 5px 7px 8px;
+        padding: 6px 5px 7px 8px;
         align-items: center;
     }
     .header-mobile{
@@ -115,6 +132,7 @@ body{
         font-weight: 400;
         /* background: transparent; */
         border: none;
+        font-family: smedium;
         padding: 12px 96px 12px 48px;
         background-color: #1F1F1F;
         border-radius: 500px;
@@ -139,7 +157,7 @@ body{
         width: 1px;
         height: 25px;
         background-color: #B3B3B3B3;
-        right: 35px;
+        right: 36px;
     }
     .lap-header-loginsection {
         display: flex;
@@ -154,7 +172,7 @@ body{
         font-weight: 700;
     } */
     .lap-header-loginsection span:nth-child(3) {
-        padding-right: 27px;
+        padding-right: 23px;
         position: relative;
     }
     .lap-header-loginsection span:nth-child(3)::after{
@@ -162,8 +180,8 @@ body{
         position: absolute;
         width: 1px;
         height: 25px;
-        background-color: white;
-        right: 0px;
+        background-color:#FFFFFF;
+        right: -2px;
         top: 6px;  
     }
     .lap-header-loginsection img {
@@ -174,7 +192,10 @@ body{
         color: #B3B3B3;
         font-size: 16PX;
         font-weight: 700;
-        font-family: sregular;
+        font-family: sbold;
+        letter-spacing: normal;
+        line-height: normal;
+
     }
     .loginsection-subspan {
         padding: 4px 16px 4px 10px;
@@ -774,9 +795,12 @@ hr{
     background-color: #121212;
     margin: 0 8px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .desktop-one-sub{
-    padding: 17px 16px 8px;
+    padding: 20px 16px 8px;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -805,12 +829,12 @@ hr{
     padding: 0 8px 8px;
     display: flex;
     flex-direction: column;
-    height: 478px;
-    gap: 8px;
+    /* height: 563px; */
+    gap: 2px;
 
 }
 .sub-two-one{
-    margin: 8px 0;
+    margin: 14px 0;
     padding: 16px 20px;
     background-color: #1F1F1F;
     display: flex;
@@ -831,11 +855,13 @@ hr{
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
-    font-family: sbold; 
+    font-family: sbold;
+    line-height: normal;
+
 }
 .desktop-two-sub button{
     background-color: #FFFFFF;
-    padding: 4px 16px;
+    padding: 6px 16px;
     font-size: 14px;
     font-weight: 400;
     border-radius: 9999px;
@@ -866,6 +892,9 @@ hr{
     gap: 8px;
 }
 /* desktop-last */
+.desktop-last{
+    /* height: 208px; */
+}
 .desktop-span{
     margin: 32px 0;
     padding: 0 24px;
@@ -934,7 +963,7 @@ hr{
     padding: 11px 24px 7px 15px;
     background-image: linear-gradient(90deg,#af2896,#509bf5);
     height: 66px;
-    margin: 0 8px 8px;
+    margin: 0 8px;
     position: sticky;
     bottom: 0;
     display: none;
@@ -960,6 +989,10 @@ hr{
     color: #000000;
     font-size: 16px;
     font-family: sbold;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: normal;
+
     border: none;
 }
 .body-desktop-last{
@@ -970,7 +1003,7 @@ hr{
     .body-banner-desktop{
         display: block;
         display: flex;
-        height: calc(100vh - 70px);
+        height: calc(100vh - 140px);
         padding-bottom: 8px;
     }
     .body-banner-large{
@@ -992,6 +1025,7 @@ hr{
     }
     .body-banner-large .songs{
         padding: 12px;
+        cursor: pointer;
     }
     .body-banner-large .songs img{
         height: 154px;
@@ -1002,6 +1036,16 @@ hr{
         margin-top: 14px;
         padding-left: 12px;
         margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .body-heading span {
+        color: #b3b3b3;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: sbold;
+        line-height: normal;
+
     }
     .desktop-data .songs img {
         border-radius: 9999px;
@@ -1037,6 +1081,7 @@ hr{
   }
   hr{
     margin: 0 0 24px;
+    display: none;
   }
   .desktop-footer{
     display: block;
