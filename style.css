@@ -63,11 +63,105 @@ body{
     top: 100px;
     right: 8px;
     border: none;
-    /* display: none; */
+    display: none;
 }
 .songs div:nth-child(1){
     position: relative;
     
+}
+/* sideNav */
+.sidenavRefresh{
+    background-color: #000000;
+    position: relative;
+    left: 295px;
+    bottom: 36px;
+    border: none;
+}
+.sidenav{
+    padding: 56px 40px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    z-index: 100;
+    display: none;
+}
+.sidenavView{
+    display: flex;
+    gap: 8px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 0;
+}
+.sidenavView h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sbold;
+    color:white;
+}
+.sidenavSpan{
+    display: flex;
+    flex-direction: column;
+}
+.sidenavProfile{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: smedium;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 12px 0;
+}
+.sidenavLogout{
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: smedium;
+    color: #FFFFFF;
+    padding: 12px 0;
+}
+.sidenav ul li{
+    list-style: none;
+    color: #FFFFFF;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: sregular;
+}
+.sidenav ul{
+    position: relative;
+    margin-top: 50px ;
+}
+.sidenav ul::before{
+    position: absolute;
+    content: " ";
+    height: 2px;
+    width: 20px;
+    background-color:white;
+    top: -25px;
+}
+    
+.sidenavView img{
+    background-color: #000000;
+}
+
+/* display block-section */ 
+ .open{
+    display: block;
+} 
+ /* display none-section */
+.touch{
+    display: none !important;
 }
 
 @media screen and (min-width:1024px){
